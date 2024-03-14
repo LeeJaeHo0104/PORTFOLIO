@@ -1,0 +1,41 @@
+body{
+    background: linear-gradient(to left, #f0ebe3, #f0ebe3);
+}
+.wrap {
+	width: 100%;
+}
+.inner{
+    width: 100%;
+    max-width: 1300px;
+    margin: auto;
+}
+header{
+    width: 100%;
+    height: 100%;
+
+    nav{
+        width: 100%;
+        height: 5rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .logo{
+            width: 20%;
+        } //logo
+
+        ul.dep1{
+            width: 80%;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+
+            li > a > img{
+                width: 5.7rem;
+                height: 5.7rem;
+            }
+        } //ul.dep1
+    } //logo
+}
+
+//todo header 부터 시작
