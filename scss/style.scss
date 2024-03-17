@@ -250,11 +250,21 @@ html {
 
     .main_left{
         width: 60%;
-        .main_img{
+        // .main_img{
+        //     width: 90%;
+        //     margin-left: 5rem;
+        //     border-radius: 5rem;
+        //     box-shadow: 3px 3px 3px #d9d9d9;
+        // }
+        .p1_full_page{
             width: 90%;
+            height: 60rem;
             margin-left: 5rem;
-            border-radius: 5rem;
-            box-shadow: 3px 3px 3px #d9d9d9;
+            background-image: url(../img/project/project1/project1_fullpage.png);
+            background-repeat: no-repeat;
+            background-position: center 0%;
+            background-size: 100%;
+            transition: all 2s ease-in-out;
         }
     } //main_left
     .main_right{

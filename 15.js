@@ -25,10 +25,19 @@ gsap.to(sections, {
 // });
 
 //로티 로고
-const lottie = bodymovin.loadAnimation({
-    container : document.querySelector('.logo'),
-    renderer : 'svg',
-    loop : true,
-    autoplay : true,
-    path : './img/logo.json',
+// const lottie = bodymovin.loadAnimation({
+//     container : document.querySelector('.logo'),
+//     renderer : 'svg',
+//     loop : true,
+//     autoplay : true,
+//     path : './img/logo.json',
+// });
+
+//프로젝트1 사이트 사진 호버
+const p1FullPage = document.querySelector('.p1_full_page');
+p1FullPage.addEventListener('mouseenter', function(){
+	p1FullPage.style.backgroundPosition = 'center 100%';
 });
+p1FullPage.addEventListener('mouseleave', function(){
+	p1FullPage.style.backgroundPosition = 'center 0%';
+})
