@@ -30,7 +30,7 @@ footer, header, hgroup, menu, nav, section {
 body {
 	line-height: 1;
 }
-ol, ul {
+ol, ul, li {
 	list-style: none;
 }
 blockquote, q {
@@ -57,7 +57,7 @@ html{
     /* 최상위 폰트 사이즈만 바꾸면 한번에 바꿀 수 있음 */
     box-sizing: border-box;
     line-height: 1.75;
-    font-family: 'Pretendart', sans-serif;
+    font-family: 'Pretendard', sans-serif;
 }
 :root{
     --primary1: #E70017;
