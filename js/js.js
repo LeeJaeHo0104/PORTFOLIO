@@ -7,7 +7,7 @@ const lottie = bodymovin.loadAnimation({
     path : './img/logo.json',
 });
 
-let sections = gsap.utils.toArray('.section');
+let sections = gsap.utils.toArray('.horizontal .section');
 
 gsap.to(sections, {
 	xPercent: -100 * (sections.length - 1),

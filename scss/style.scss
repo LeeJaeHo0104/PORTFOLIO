@@ -7,7 +7,7 @@ html {
 body{
     background-color: #fdfdfd;
 }
-.horizontal {
+.horizontal{
     width: 400%;
     height: 100vh;
     display: flex;
@@ -32,17 +32,16 @@ body{
         justify-content: center;
 
         .logo{
-            width: 6rem;
-            height: 6rem;
+            width: 8rem;
+            height: 8rem;
         } //logo
 
         ul.dep1{
-                width: 100%;
+                width: 85%;
                 height: 100%;
                 display: flex;
                 align-items: center;
                 justify-content: flex-end;
-                margin-right: 5rem;
                 
                 li{
                     font-family: "Space Grotesk", sans-serif;
@@ -226,8 +225,6 @@ body{
             margin-left: 20rem;
         }
     } //introduce
-    .content_right{
-    }
     .green_circle{
         width: 55em;
         height: 55em;
@@ -246,7 +243,7 @@ body{
     }
 }
 
-.sec1{
+.sec1, .sec3{
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -258,6 +255,7 @@ body{
         .pc1_full_page{
             width: 90%;
             height: 60rem;
+            border: 3px solid #ddd;
             border-radius: 3rem;
             margin-left: 5rem;
             background-image: url(../img/project/project1/project1_fullpage.png);
@@ -273,6 +271,7 @@ body{
             right: 0%;
             width: 25%;
             height: 40rem;
+            border: 3px solid #ddd;
             border-radius: 2rem;
             background-image: url(../img/project/project1/project1_fullpageM.png);
             background-repeat: no-repeat;
@@ -401,24 +400,22 @@ body{
                 color: #0054a6;
             }
         }
-        .site:hover, .github:hover{
+        .site:hover, .github:hover, .file:hover{
             color: #fff;
             background-color: #0054a6;
         }
-        .site:hover a, .github:hover a{
+        .site:hover a, .github:hover a, .file:hover a{
             color: #fff;
         }
         } //main_content
     } //main_right
 } //sec1
 .sec2{
+    
     background-color: lightcoral;
 }
-.sec3{
-    background-color: lightgreen;
-}
 .sec4{
-    background-color: lightsalmon;
+    background-color: lightgray;
 }
 
 
