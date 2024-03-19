@@ -1,3 +1,11 @@
+//로티 로고
+const lottie = bodymovin.loadAnimation({
+    container : document.querySelector('.logo'),
+    renderer : 'svg',
+    loop : true,
+    autoplay : true,
+    path : './img/codelogo.json',
+});
 
 //gsap 가로스크롤
 let sections = gsap.utils.toArray('.section');
@@ -17,7 +25,7 @@ gsap.to(sections, {
 //프로젝트1 사이트 사진 호버
 const pc1FullPage = document.querySelector('.pc1_full_page');
 const m1FullPage = document.querySelector('.m1_full_page');
-/* ========== 변수 ========== */
+/* ========== 프로젝트1 변수 ========== */
 
 pc1FullPage.addEventListener('mouseenter', function(){
 	pc1FullPage.style.backgroundPosition = 'center 100%';
@@ -32,11 +40,20 @@ m1FullPage.addEventListener('mouseleave', function(){
 	m1FullPage.style.backgroundPosition = 'center 0%';
 });
 
-//로티 로고
-const lottie = bodymovin.loadAnimation({
-    container : document.querySelector('.logo'),
-    renderer : 'svg',
-    loop : true,
-    autoplay : true,
-    path : './img/codelogo.json',
+
+const pc2FullPage = document.querySelector('.pc2_full_page');
+const m2FullPage = document.querySelector('.m2_full_page');
+/* ========== 프로젝트1 변수 ========== */
+
+pc2FullPage.addEventListener('mouseenter', function(){
+	pc2FullPage.style.backgroundPosition = 'center 100%';
+});
+pc2FullPage.addEventListener('mouseleave', function(){
+	pc2FullPage.style.backgroundPosition = 'center 0%';
+});
+m2FullPage.addEventListener('mouseenter', function(){
+	m2FullPage.style.backgroundPosition = 'center 100%';
+});
+m2FullPage.addEventListener('mouseleave', function(){
+	m2FullPage.style.backgroundPosition = 'center 0%';
 });
