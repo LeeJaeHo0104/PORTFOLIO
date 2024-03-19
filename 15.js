@@ -1,4 +1,4 @@
-//로티 로고
+//로고
 const lottie = bodymovin.loadAnimation({
     container : document.querySelector('.logo'),
     renderer : 'svg',
@@ -6,6 +6,56 @@ const lottie = bodymovin.loadAnimation({
     autoplay : true,
     path : './img/codelogo.json',
 });
+
+/* ========== project1 ========== */
+//경찰차
+const policeCar = bodymovin.loadAnimation({
+	container : document.querySelector('.police_car'),
+    renderer : 'svg',
+    loop : true,
+    autoplay : true,
+    path : './img/policecar.json',
+});
+//pr1 ani1
+const pr1Ani1 = bodymovin.loadAnimation({
+	container : document.querySelector('.pr1_ani'),
+    renderer : 'svg',
+    loop : true,
+    autoplay : true,
+    path : './img/pr1_ani1.json',
+});
+/* ========== project1 ========== */
+
+
+/* ========== project2 ========== */
+//피자 오토바이
+const pizzaAutoby = bodymovin.loadAnimation({
+	container : document.querySelector('.pizza_autoby'),
+    renderer : 'svg',
+    loop : true,
+    autoplay : true,
+    path : './img/pizzaautoby.json',
+});
+//pr2 ani1
+const pr2Ani1 = bodymovin.loadAnimation({
+	container : document.querySelector('.pr2_ani'),
+    renderer : 'svg',
+    loop : true,
+    autoplay : true,
+    path : './img/pr2_ani1.json',
+});
+/* ========== project2 ========== */
+
+
+/* ========== contact ========== */
+const nameEffect = bodymovin.loadAnimation({
+	container : document.querySelector('.name_effect'),
+    renderer : 'svg',
+    loop : true,
+    autoplay : true,
+    path : './img/name_effect.json',
+});
+/* ========== contact ========== */
 
 //gsap 가로스크롤
 let sections = gsap.utils.toArray('.section');
