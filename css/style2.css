@@ -110,7 +110,6 @@ ul.dep1 > li > a:hover{
     border-radius: 2rem;
     background-color: #ebebeb;
     transform: rotate(-90deg);
-    box-shadow: 10px 10px lightblue 5px;
 }
 .cnt_left a {
     font-size: 2rem;
@@ -148,6 +147,29 @@ ul.dep1 > li > a:hover{
 .cnt_mid > .cnt_main > .stroke {
     -webkit-text-stroke: 1.5px #29A587;
     color: transparent;
+}
+.jump{
+    display: inline-block;
+}
+.jump1{
+    display: inline-block;
+    animation: jump 3s infinite;
+}
+.jump2{
+    display: inline-block;
+    animation: jump 3s infinite;
+    animation-delay: 0.5s;
+}
+@keyframes jump {
+    0%{
+        transform: translateY(0rem);
+    }
+    25%{
+        transform: translateY(-5rem);
+    }
+    100%{
+        transform: translateY(0rem);
+    }
 }
 .mouse_ani{
     width: 25rem;
@@ -571,10 +593,10 @@ ul.dep1 > li > a:hover{
     transition: all 0.8s ease-in-out;
 }
 .description2 .code_capture img[alt="banner"]:hover{
-    transform: translate(-3rem, -5rem) scale(1.8);
+    transform: translate(-10rem, -5rem) scale(1.8);
 }
 .main_banner{
-    width: 40rem;
+    width: 50rem;
 }
 /* ========== project1_DESC ========== */
 
@@ -698,7 +720,7 @@ ul.dep1 > li > a:hover{
     color: #E70017;
     margin-bottom: 1rem;
 }
-.sticky_border{
+.capture_border{
     border: 1px solid;
 }
 .pr2_description .description2 .code_capture p{
@@ -729,7 +751,7 @@ section.pr2_description .description1 img.sticky_js{
     transition: all 0.8s ease-in-out;
 }
 img.scroll_capture:hover{
-    transform: translate(20rem, -8rem) scale(2);
+    transform: translate(25rem, -13rem) scale(2.5);
 }
 /* ========== project2 description ========== */
 
