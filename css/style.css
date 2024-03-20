@@ -576,7 +576,7 @@ ul.dep1 > li > a:hover{
 .description_section{
     display: flex;
     flex-direction: column;
-    flex: 1 1 50%;
+    gap: 3rem;
     height: 70vh;
     padding: 3rem  5rem;
 }
@@ -642,6 +642,12 @@ ul.dep1 > li > a:hover{
 }
 .main_banner{
     width: 50rem;
+}
+.pr1_description img.weather_cap{
+    width: 30rem;
+}
+.pr1_description img.weather_capJS{
+    width: 105rem;
 }
 /* ========== project1_DESC ========== */
 

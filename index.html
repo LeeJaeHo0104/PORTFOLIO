@@ -117,7 +117,7 @@
                             </div> <!-- compatibility_name -->
                         </div> <!-- compatibility -->
                         <div class="project_desc">
-                            <div class="desc1">경찰청 사이트 리디자인 후 제작</div>
+                            <div class="desc1">날씨정보 api를 활용해 실시간 온도 구현</div>
                             <div class="desc2">미디어 쿼리를 이용한 반응형 페이지 제작</div>
                             <div class="desc3">JQuery로 메인 자동 슬라이드 구현</div>
                             <div class="desc4">웹 접근성, 웹표준 준수</div>
@@ -162,25 +162,24 @@
                 <div class="description_section">
                     <div class="description1">
                         <div class="sub">
-                            <div class="sub_title">1. 현재 시간 나타내기</div>
+                            <div class="sub_title">1. 실시간 날씨 정보 구현</div>
                             <div class="sub_text">
-                                time 함수를 구현하여 <span class="bold">new Date 함수</span>를 통해 현재 시간을 가져오고, <span class="bold">toLocaleTimeString 함수</span>를 활용하여 현재 시간을 'HH:MM:SS' 형식으로 변환하였습니다.&nbsp;
-                                이후, <span class="bold">innerHTML 속성</span>을 사용하여 id가 'time'인 HTML 요소에 해당 시간을 표시하도록 하였습니다.&nbsp;
-                                또한, <span class="bold">setInterval 함수</span>를 이용해 time 함수가 매 1초(1000ms)마다 반복 실행되어 시간 정보가 지속적으로 업데이트 되도록 설정하였습니다.<br>이러한 코드를 구현하여 사용자는 웹 페이지 상에서 실시간으로 갱신되는 정확한 시간을 확인할 수 있도록 하는 기능을 만들었습니다.
+                                openwheathermap 사이트에서 날씨 정보 api를 <span class="bold">getJSON 함수</span>로 받았습니다.&nbsp;
+                                <span class="bold">append 함수</span>를 이용하여 클래스 wIcon 태그에 날씨 아이콘 이미지를 받아 넣었고, 클래스 tempNow 태그에 현재 온도 정보를 받아 넣었습니다.
                             </div>
                         </div>
                         <div class="code_capture">
                             <div class="capture1">
                                 <p>구현 사진</p>
-                                <img class="capture_border" src="./img/project/project1/description/colck_cap.PNG" alt="clock">
+                                <img class="capture_border weather_cap" src="./img/project/project1/weather.png" alt="weather">
                             </div>
                             <div class="capture2">
                                 <p>HTML 코드</p>
-                                <img src="./img/project/project1/description/colckHTML.PNG" alt="clock">
+                                <img src="./img/project/project1/weather_html.png" alt="weather">
                             </div>
                             <div class="capture3">
                                 <p>Java Script 코드</p>
-                                <img src="./img/project/project1/description/colck.PNG" alt="clock">
+                                <img  class="weather_capJS" src="./img/project/project1/weather_js.png" alt="weather">
                             </div>
                         </div>
                     </div> <!-- desc1 -->
