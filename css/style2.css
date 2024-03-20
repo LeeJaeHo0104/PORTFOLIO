@@ -64,8 +64,8 @@ body {
     justify-content: center;
 }
 .first > nav > .logo {
-    width: 8rem;
-    height: 8rem;
+    width: 22rem;
+    height: 22rem;
 }
 ul.dep1 {
     width: 85%;
@@ -352,7 +352,15 @@ ul.dep1 > li > a:hover{
     transition: all 3s ease-in-out;
     box-shadow: 0px 0px 50px #d9d9d9;
 }
-
+.mouse_on{
+    position: absolute;
+    top: 5%;
+    right: 3%;
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: #0054a6;
+    opacity: 0.6;
+}
 .main_right {
     width: 40%;
     height: 80%;
@@ -598,8 +606,8 @@ ul.dep1 > li > a:hover{
     position: absolute;
     width: 15%;
     z-index: -1;
-    top: 20rem;
-    right: -3%;
+    top: 21rem;
+    right: -2%;
 }
 .pc2_full_page {
     width: 90%;
@@ -674,6 +682,15 @@ ul.dep1 > li > a:hover{
 .pr2_description .description_section{
     gap: 5rem;
 }
+.sec3 .mouse_on2{
+    position: absolute;
+    top: 5%;
+    right: 3%;
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: #E70017;
+    opacity: 0.6;
+}
 .pr2_description .code_capture{
     gap: 5rem;
 }
@@ -695,7 +712,7 @@ section.pr2_description .description1 img.sticky_js{
     transition: all 0.8s ease-in-out;
 }
 .sticky_js:hover{
-    transform: translate(-6rem, 7rem) scale(2.3);
+    transform: translate(-6rem, 7rem) scale(2);
 }
 .pr2_description .capture1 p:nth-child(3){
     margin-top: 2rem;
@@ -707,6 +724,13 @@ section.pr2_description .description1 img.sticky_js{
     margin-left: 1rem;
     opacity: 0.7;
 }
+.pr2_description img.scroll_capture{
+    width: 35rem;
+    transition: all 0.8s ease-in-out;
+}
+img.scroll_capture:hover{
+    transform: translate(20rem, -8rem) scale(2);
+}
 /* ========== project2 description ========== */
 
 
@@ -715,6 +739,43 @@ section.pr2_description .description1 img.sticky_js{
     width: 100%;
     height: 100vh;
     margin: auto;
+}
+.skill > .title {
+    height: 20rem;
+    line-height: 20rem;
+    text-align: center;
+    font-size: 8rem;
+    font-weight: 900;
+    font-family: "Space Grotesk", sans-serif;
+    color: #303133;
+    position: relative;
+    margin-top: 5rem;
+}
+.skill > .title:before,
+.skill > .title:after {
+    position: absolute;
+    content: "";
+    display: block;
+}
+.skill > .title:before {
+    width: 4rem;
+    height: 4rem;
+    top: 50%;
+    left: 51%;
+    transform: translate(-700%, -50%);
+    border: 0.4rem solid #303133;
+    border-radius: 50%;
+    box-shadow: 3px 3px 10px #818181;
+    background-color: #29A587;
+}
+.skill > .title:after {
+    width: 10rem;
+    height: 0.4rem;
+    top: 50%;
+    left: 51%;
+    transform: translate(-290%, -50%);
+    box-shadow: 3px 3px 10px #818181;
+    background-color: #303133;
 }
 /* ========== skill ========== */
 

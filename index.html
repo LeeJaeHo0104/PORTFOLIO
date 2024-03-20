@@ -90,6 +90,7 @@
                 <div class="main_left">
                     <div class="police_car"></div>
                     <div class="pr1_ani"></div>
+                    <div class="mouse_on">마<br>우<br>스<br>를<br><br>화<br>면<br>에<br><br>올<br>려<br>주<br>세<br>요</div>
                     <div class="pc1_full_page"></div>
                     <div class="m1_full_page"></div>
                 </div> <!-- main_left -->
@@ -208,6 +209,7 @@
                 <div class="main_left">
                     <div class="pizza_autoby"></div>
                     <div class="pr2_ani"></div>
+                    <div class="mouse_on2">마<br>우<br>스<br>를<br><br>화<br>면<br>에<br><br>올<br>려<br>주<br>세<br>요</div>
                     <div class="pc2_full_page"></div>
                     <div class="m2_full_page"></div>
                 </div> <!-- main_left -->
@@ -222,7 +224,7 @@
                         <div class="project_skill">
                             <div class="skill_title">기술스택</div>
                             <div class="skill_name">
-                                HTML, CSS, Java Script, JQeury
+                                HTML, CSS, Java Script
                             </div> <!-- skill_name -->
                         </div> <!-- skill -->
                         <div class="project_desc">
@@ -306,24 +308,18 @@
                         <div class="sub">
                             <div class="sub_title">2. 슬라이드 배너</div>
                             <div class="sub_text">
-                                timer 함수를 통해 일정 시간마다 slideFn 함수를 호출하여 배너가 자동으로 넘어가도록 설정하고, 배너 위에 마우스를 올리면 <span class="bold">clearInterval 함수를 이용해</span> 중지되도록 합니다.&nbsp;
-                                사용자가 <span class="bold">'next' 버튼을 클릭하면 배너가 left를 기준으로 0%에서 -100%로 이동</span>하고, <span class="bold">'prev' 버튼을 클릭하면 배너의 left를 기준으로 0%에서 100%로 이동</span>하여 새로운 배너가 나타나는 애니메이션 효과가 실행됩니다.&nbsp;
-                                페이저 버튼을 클릭하면 해당 배너로 직접 이동할 수 있습니다.&nbsp;
-                                모든 애니메이션은 move 함수를 통해 구현되며, 이 함수는 시작 위치와 끝 위치를 매개변수로 받아 CSS 속성을 변경하고 애니메이션을 적용합니다.
+                                <span class="bold">window.onscroll</span>을 활용하여, 브라우저 창에서 스크롤 이벤트가 발생할 때마다 특정 함수가 실행되도록 설정하였습니다.&nbsp;
+                                먼저 <span class="bold">window.pageYOffset</span>을 이용하여 스크롤된 높이 정보를 height 변수에 저장하였고, <span class="bold">window.innerWidth</span>를 사용하여 화면의 너비를 width 변수에 저장했습니다.&nbsp;
+                                sec1Title이라는 변수를 대상으로, 화면의 너비가 1100px 이상인 경우와 그렇지 않은 경우를 구분하기 위해 <span class="bold">if-else</span> 조건문을 사용했습니다.&nbsp;
+                                if문 내에서는 화면 높이가 400px 이상인 경우와 그렇지 않은 경우를 구분했습니다.&nbsp;
+                                else문 내에서는 화면 높이가 150px 이상인 경우와 그렇지 않은 경우를 구분했습니다.&nbsp;
+                                이렇게 설정함으로써, 다양한 화면 크기와 스크롤 위치에 따라 조건적으로 sec1Title에 다른 스타일을 적용할 수 있게 되었습니다.&nbsp;이러한 방식으로 <span class="bold">반응형 디자인</span>에서 설정한 조건에 따라 정상적으로 함수가 작동하도록 하였습니다.
                             </div>
                         </div>
                         <div class="code_capture">
                             <div class="capture1">
-                                <p>구현 사진</p>
-                                <img src="./img/project/project1/description/colck_cap.PNG" alt="clock">
-                            </div>
-                            <div class="capture2">
-                                <p>HTML 코드</p>
-                                <img src="./img/project/project1/description/colckHTML.PNG" alt="clock">
-                            </div>
-                            <div class="capture3">
                                 <p>Java Script 코드</p>
-                                <img src="./img/project/project1/description/colck.PNG" alt="clock">
+                                <img class="scroll_capture" src="./img/project/project2/desc/scroll.png" alt="main_banner">
                             </div>
                         </div>
                     </div> <!-- desc2 -->
@@ -331,7 +327,7 @@
             </section> <!-- project2 DESC -->
         </div> <!-- horizontal -->
         <div class="skill" id="SKILL">
-            <h1>skill</h1>
+            <div class="title">SKILL</div>
         </div> <!-- skill -->
         <div class="contact" id="CONTACT">
             <div class="title">CONTACT</div>

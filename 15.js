@@ -4,7 +4,7 @@ const lottie = bodymovin.loadAnimation({
     renderer : 'svg',
     loop : true,
     autoplay : true,
-    path : './img/codelogo.json',
+    path : './img/logo.json',
 });
 
 //마우스
