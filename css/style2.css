@@ -3,6 +3,7 @@ html {
     overflow-y: scroll;
     height: 100%;
     -webkit-overflow-scrolling: touch;
+    /* scroll-behavior:smooth; */
 }
 body {
     background-color: #fdfdfd;
@@ -124,6 +125,9 @@ ul.dep1 > li > a:hover{
 .cnt_left i {
     padding-left: 1rem;
 }
+.cnt_mid{
+    margin-top: 15rem;
+}
 .cnt_mid > .cnt_top {
     font-size: 2.4rem;
     font-weight: 400;
@@ -144,6 +148,11 @@ ul.dep1 > li > a:hover{
 .cnt_mid > .cnt_main > .stroke {
     -webkit-text-stroke: 1.5px #29A587;
     color: transparent;
+}
+.mouse_ani{
+    width: 25rem;
+    opacity: 0.7;
+    margin: auto;
 }
 .cnt_right {
     width: 15rem;
@@ -301,7 +310,7 @@ ul.dep1 > li > a:hover{
     position: absolute;
     top: -12%;
     left: 5%;
-    animation: policeCar 10s infinite;
+    animation: policeCar 15s infinite;
 }
 @keyframes policeCar {
     0%{transform: translate(0);}
@@ -477,10 +486,12 @@ ul.dep1 > li > a:hover{
 /* ========== project1 ========== */
 /* ========== project1_DESC ========== */
 .description_title{
-    color: #0054a6;
     font-size: 4.5rem;
     font-weight: 600;
     margin: 2rem 0 0 3rem;
+}
+.pr1_description .description_title{
+    color: #0054a6;
 }
 .description_title span{
     font-size: 2rem;
@@ -520,38 +531,39 @@ ul.dep1 > li > a:hover{
     align-items: flex-start;
     gap: 2rem;
 }
-.description1 .code_capture p{
+.code_capture p{
     font-size: 2rem;
     font-weight: 700;
-    color: #0054a6;
     margin-bottom: 2rem;
+}
+.pr1_description .description1 .code_capture p{
+    color: #0054a6;
 }
 .description1 .code_capture img{
     width: 40rem;
 }
-.description2 .code_capture p{
+.code_capture p{
     font-size: 2rem;
     font-weight: 700;
-    color: #0054a6;
     margin-bottom: 2rem;
     transition: all 0.3s;
-    cursor: pointer;
 }
-.description2 .code_capture p span{
+.pr1_description .description2 .code_capture p{
+    color: #0054a6;
+}
+.pr1_description .description2 .code_capture p span{
     font-size: 1.6rem;
     color: #303133;
     font-weight: 600;
     margin-left: 1rem;
-    cursor: pointer;
+    opacity: 0.7;
 }
 .description2 .code_capture img[alt="banner"]{
-    width: 140rem;
+    width: 100rem;
     transition: all 0.8s ease-in-out;
-    position: absolute;
 }
 .description2 .code_capture img[alt="banner"]:hover{
-    width: 185rem;
-    transform: translate(-45rem, -10rem);
+    transform: translate(-3rem, -5rem) scale(1.8);
 }
 .main_banner{
     width: 40rem;
@@ -655,11 +667,57 @@ ul.dep1 > li > a:hover{
 }
 /* ========== project2 ========== */
 
-.sec2,
-.sec4{
-    font-size: 15rem;
-    background-color: lightgreen;
+/* ========== project2 description ========== */
+.pr2_description .description_title{
+    color: #E70017;
 }
+.pr2_description .description_section{
+    gap: 5rem;
+}
+.pr2_description .code_capture{
+    gap: 5rem;
+}
+.pr2_description .description1 .code_capture p{
+    color: #E70017;
+    margin-bottom: 1rem;
+}
+.sticky_border{
+    border: 1px solid;
+}
+.pr2_description .description2 .code_capture p{
+    color: #E70017;
+}
+.pr2_description .capture1 img{
+    width: 50rem;
+}
+section.pr2_description .description1 img.sticky_js{
+    width: 80rem;
+    transition: all 0.8s ease-in-out;
+}
+.sticky_js:hover{
+    transform: translate(-6rem, 7rem) scale(2.3);
+}
+.pr2_description .capture1 p:nth-child(3){
+    margin-top: 2rem;
+}
+.pr2_description .description1 .code_capture p span{
+    font-size: 1.6rem;
+    color: #303133;
+    font-weight: 600;
+    margin-left: 1rem;
+    opacity: 0.7;
+}
+/* ========== project2 description ========== */
+
+
+/* ========== skill ========== */
+.skill{
+    width: 100%;
+    height: 100vh;
+    margin: auto;
+}
+/* ========== skill ========== */
+
 
 /* ========== contact ========== */
 .contact {

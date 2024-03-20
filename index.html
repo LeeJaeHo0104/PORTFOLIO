@@ -25,8 +25,8 @@
                     <ul class="dep1">
                         <li><a href="#HOME">HOME</a></li>
                         <li><a href="#ABOUT">ABOUT</a></li>
-                        <li><a href="#SKILL">SKILL</a></li>
                         <li><a href="#PROJECT">PROJECT</a></li>
+                        <li><a href="#SKILL">SKILL</a></li>
                         <li><a href="#CONTACT">CONTACT</a></li>
                     </ul>
                 </nav> <!-- nav -->
@@ -42,7 +42,8 @@
                         <div class="cnt_main">
                             <span class="green">호재</span>를 부르는!<br>
                             <span class="stroke">신입 퍼블리셔</span><br>
-                            <span class="green">이재호</span>입니다.<br>
+                            <span class="green">이재호</span> 입니다.<br>
+                            <div class="mouse_ani"></div>
                         </div>
                     </div> <!-- mid -->
                     <div class="cnt_right">
@@ -54,7 +55,7 @@
                 </div> <!-- cnt -->
         </div> <!-- first -->
         <div class="second">
-            <div class="title">ABOUT</div>
+            <div class="title" id="ABOUT">ABOUT</div>
             <div class="second_content">
                 <div class="content_left">
                     <div class="content_title">Introduce</div>
@@ -85,7 +86,7 @@
             </div>
         </div> <!-- second -->
         <div class="horizontal">
-            <div class="section sec1">
+            <div class="section sec1" id="PROJECT">
                 <div class="main_left">
                     <div class="police_car"></div>
                     <div class="pr1_ani"></div>
@@ -153,7 +154,7 @@
                     </div>
                 </div> <!-- main_right -->
             </div> <!-- project1 -->
-            <section class="section description">
+            <section class="section pr1_description">
                 <div class="description_title">Description <span>(Project1)</span></div>
                 <div class="description_section">
                     <div class="description1">
@@ -274,12 +275,65 @@
                         </div>
                     </div>
                 </div> <!-- main_right -->
-            </section>
-            <section class="section description">
-                12345
             </section> <!-- project2 -->
+            <section class="section pr2_description">
+                <div class="description_title">Description <span>(Project2)</span></div>
+                <div class="description_section">
+                    <div class="description1">
+                        <div class="sub">
+                            <div class="sub_title">1. Gnb 스티키 메뉴</div>
+                            <div class="sub_text">
+                                <span class="bold">cloneNode 함수</span>와 <span class="bold">true 인자</span>를 사용하여 원래의 gnb 메뉴와 그 자식 요소들을 모두 복제했습니다.&nbsp;
+                                이를 통해 원본 gnb 메뉴의 복사본을 변수 gnbClonedp 저장하였습니다.&nbsp;
+                                이후, <span class="bold">appendChild 함수</span>를 이용해 복제된 gnb 메뉴를 gnbStickyContainer 변수에 추가하였고, 이 과정을 통해 복제된 메뉴가 변수 gnbStickyContainer 안에 위치하게 되었습니다.&nbsp;
+                                마지막으로 <span class="bold">setAttribute 함수</span>를 사용해 복제된 gnb 메뉴 안에 있는 로고 이미지의 소스를 기존의 것과 다른 빨간색 로고 이미지로 변경하였습니다.
+                            </div>
+                        </div>
+                        <div class="code_capture">
+                            <div class="capture1">
+                                <p>기본 Gnb</p>
+                                <img src="./img/project/project2/desc/sticky_1.png" alt="main_banner">
+                                <p>스티키 Gnb</p>
+                                <img class="sticky_border" src="./img/project/project2/desc/sticky_2.png" alt="main_banner">
+                            </div>
+                            <div class="capture2">
+                                <p>Java Script 코드<span>(마우스를 올려주세요)</span></p>
+                                <img class="sticky_js" src="./img/project/project2/desc/sticky_js.png" alt="banner">
+                            </div>
+                        </div>
+                    </div> <!-- desc1 -->
+                    <div class="description2">
+                        <div class="sub">
+                            <div class="sub_title">2. 슬라이드 배너</div>
+                            <div class="sub_text">
+                                timer 함수를 통해 일정 시간마다 slideFn 함수를 호출하여 배너가 자동으로 넘어가도록 설정하고, 배너 위에 마우스를 올리면 <span class="bold">clearInterval 함수를 이용해</span> 중지되도록 합니다.&nbsp;
+                                사용자가 <span class="bold">'next' 버튼을 클릭하면 배너가 left를 기준으로 0%에서 -100%로 이동</span>하고, <span class="bold">'prev' 버튼을 클릭하면 배너의 left를 기준으로 0%에서 100%로 이동</span>하여 새로운 배너가 나타나는 애니메이션 효과가 실행됩니다.&nbsp;
+                                페이저 버튼을 클릭하면 해당 배너로 직접 이동할 수 있습니다.&nbsp;
+                                모든 애니메이션은 move 함수를 통해 구현되며, 이 함수는 시작 위치와 끝 위치를 매개변수로 받아 CSS 속성을 변경하고 애니메이션을 적용합니다.
+                            </div>
+                        </div>
+                        <div class="code_capture">
+                            <div class="capture1">
+                                <p>구현 사진</p>
+                                <img src="./img/project/project1/description/colck_cap.PNG" alt="clock">
+                            </div>
+                            <div class="capture2">
+                                <p>HTML 코드</p>
+                                <img src="./img/project/project1/description/colckHTML.PNG" alt="clock">
+                            </div>
+                            <div class="capture3">
+                                <p>Java Script 코드</p>
+                                <img src="./img/project/project1/description/colck.PNG" alt="clock">
+                            </div>
+                        </div>
+                    </div> <!-- desc2 -->
+                </div> <!-- description_section -->
+            </section> <!-- project2 DESC -->
         </div> <!-- horizontal -->
-        <div class="contact">
+        <div class="skill" id="SKILL">
+            <h1>skill</h1>
+        </div> <!-- skill -->
+        <div class="contact" id="CONTACT">
             <div class="title">CONTACT</div>
             <div class="info">
                 <div class="num">

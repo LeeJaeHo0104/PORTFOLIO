@@ -7,6 +7,15 @@ const lottie = bodymovin.loadAnimation({
     path : './img/codelogo.json',
 });
 
+//마우스
+const mouse = bodymovin.loadAnimation({
+    container : document.querySelector('.mouse_ani'),
+    renderer : 'svg',
+    loop : true,
+    autoplay : true,
+    path : './img/mouse.json',
+});
+
 /* ========== project1 ========== */
 //경찰차
 const policeCar = bodymovin.loadAnimation({
