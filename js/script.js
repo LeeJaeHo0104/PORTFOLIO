@@ -68,6 +68,7 @@ const nameEffect = bodymovin.loadAnimation({
 
 //gsap 가로스크롤
 let sections = gsap.utils.toArray('.section');
+let second = gsap.utils.toArray('.second');
 
 gsap.to(sections, {
 	xPercent: -100 * (sections.length - 1),
