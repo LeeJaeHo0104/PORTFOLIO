@@ -16,6 +16,16 @@ const mouse = bodymovin.loadAnimation({
     path : './img/mouse.json',
 });
 
+/* ========== ABOUT ========== */
+const aboutMainAni = bodymovin.loadAnimation({
+	container : document.querySelector('.about_ani_4'),
+    renderer : 'svg',
+    loop : true,
+    autoplay : true,
+    path : './img/skill_effect_1.json',
+});
+/* ========== ABOUT ========== */
+
 /* ========== project1 ========== */
 //경찰차
 const policeCar = bodymovin.loadAnimation({
@@ -56,13 +66,7 @@ const pr2Ani1 = bodymovin.loadAnimation({
 /* ========== project2 ========== */
 
 /* ========== skill ========== */
-const skillAni1 = bodymovin.loadAnimation({
-	container : document.querySelector('.skill_effect_1'),
-    renderer : 'svg',
-    loop : true,
-    autoplay : true,
-    path : './img/skill_effect_1.json',
-});
+
 /* ========== skill ========== */
 
 

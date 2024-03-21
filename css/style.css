@@ -275,8 +275,8 @@ ul.dep1 > li > a:hover{
     color: #303133;
 }
 .green_circle {
-    width: 55em;
-    height: 55em;
+    width: 50em;
+    height: 50em;
     margin: auto;
     background-color: #29A587;
     border-radius: 50%;
@@ -305,6 +305,12 @@ ul.dep1 > li > a:hover{
     left: 70%;
     width: 5rem;
     animation: rotate 3s infinite linear;
+}
+.about_ani_4{
+    position: absolute;
+    opacity: 0.3;
+    top: 25rem;
+    left: 0%;
 }
 @keyframes rotate {
     0%{transform: rotate(0deg);}
@@ -519,7 +525,6 @@ ul.dep1 > li > a:hover{
     font-weight: 600;
     color: #303133;
 }
-
 .project_table {
     width: 100%;
     margin-top: 4rem;
@@ -884,15 +889,6 @@ img.scroll_capture:hover{
     transform: translate(-290%, -50%);
     box-shadow: 3px 3px 10px #818181;
     background-color: #303133;
-}
-.skill_effect{
-    position: relative;
-}
-.skill_effect_1{
-    position: absolute;
-    opacity: 0.3;
-    top: -46rem;
-    left: 5%;
 }
 .sklii_ani_wrap{
     width: 100%;
