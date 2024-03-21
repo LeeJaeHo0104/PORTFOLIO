@@ -282,6 +282,34 @@ ul.dep1 > li > a:hover{
     border-radius: 50%;
     position: relative;
 }
+.about_ani{
+    position: relative;
+}
+.about_ani_1 img{
+    position: absolute;
+    top: -3rem;
+    left: 75%;
+    width: 5rem;
+    animation: rotate 3s infinite linear;
+}
+.about_ani_2 img{
+    position: absolute;
+    top: 30rem;
+    left: 10%;
+    width: 5rem;
+    animation: rotate 3s infinite linear;
+}
+.about_ani_3 img{
+    position: absolute;
+    top: 50rem;
+    left: 70%;
+    width: 5rem;
+    animation: rotate 3s infinite linear;
+}
+@keyframes rotate {
+    0%{transform: rotate(0deg);}
+    100%{transform: rotate(360deg);}
+}
 /* ========== second ========== */
 
 /* ========== horizontal ========== */
@@ -857,6 +885,71 @@ img.scroll_capture:hover{
     box-shadow: 3px 3px 10px #818181;
     background-color: #303133;
 }
+.skill_effect{
+    position: relative;
+}
+.skill_effect_1{
+    position: absolute;
+    opacity: 0.3;
+    top: -46rem;
+    left: 5%;
+}
+.sklii_ani_wrap{
+    width: 100%;
+    margin-top: 6rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5rem;
+}
+.skill_line1, .skill_line2{
+    display: flex;
+    align-items: center;
+    gap: 8rem;
+}
+.skill_bar_name{
+    font-size: 2.5rem;
+    font-weight: 500;
+    font-family: "Space Grotesk", sans-serif;
+    text-align: center;
+    margin-bottom: 3rem;
+    color: #303133;
+}
+.circular-pbar{
+    width: 20rem;
+    height: 20rem;
+    border-radius: 50%;
+    position: relative;
+    --p: 0;
+    background: conic-gradient(#29A58795 var(--p, 0), #fff var(--p, 0));
+}
+.circular-pbar::before{
+    content: '';
+    position: absolute;
+    background-color: #fff;
+    width: 88%;
+    height: 88%;
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.circular-pbar-counter{
+    position: absolute;
+    font-size: 3rem;
+    font-weight: 600;
+    color: #29A587;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+.circular-pbar-counter:before{
+    content: '%';
+    position: absolute;
+    font-size: 1.8rem;
+    top: 30%;
+    right: -50%;
+}
 /* ========== skill ========== */
 
 
@@ -902,6 +995,15 @@ img.scroll_capture:hover{
     transform: translate(-290%, -50%);
     box-shadow: 3px 3px 10px #818181;
     background-color: #303133;
+}
+.contact_ani_wrap{
+    position: relative;
+}
+.contact_title_ani{
+    position: absolute;
+    width: 35rem;
+    top: -7rem;
+    right: 41%;
 }
 .info{
     width: 100rem;

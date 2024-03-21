@@ -55,6 +55,16 @@ const pr2Ani1 = bodymovin.loadAnimation({
 });
 /* ========== project2 ========== */
 
+/* ========== skill ========== */
+const skillAni1 = bodymovin.loadAnimation({
+	container : document.querySelector('.skill_effect_1'),
+    renderer : 'svg',
+    loop : true,
+    autoplay : true,
+    path : './img/skill_effect_1.json',
+});
+/* ========== skill ========== */
+
 
 /* ========== contact ========== */
 const nameEffect = bodymovin.loadAnimation({
@@ -64,11 +74,17 @@ const nameEffect = bodymovin.loadAnimation({
     autoplay : true,
     path : './img/name_effect.json',
 });
+const titleEffect = bodymovin.loadAnimation({
+	container : document.querySelector('.contact_title_ani'),
+    renderer : 'svg',
+    loop : true,
+    autoplay : true,
+    path : './img/contact1.json',
+});
 /* ========== contact ========== */
 
 //gsap 가로스크롤
 let sections = gsap.utils.toArray('.section');
-let second = gsap.utils.toArray('.second');
 
 gsap.to(sections, {
 	xPercent: -100 * (sections.length - 1),
@@ -116,4 +132,33 @@ m2FullPage.addEventListener('mouseenter', function(){
 });
 m2FullPage.addEventListener('mouseleave', function(){
 	m2FullPage.style.backgroundPosition = 'center 0%';
+});
+
+//스킬바 애니메이션
+const circles = document.querySelectorAll('.circular-pbar');
+circles.forEach((el) => {
+    const counter = el.querySelector('.circular-pbar-counter');
+    console.log('counter: ', counter.textContent);
+    const tg = counter.textContent+"%";
+    const tm = gsap.timeline({
+        defaults : {
+            duration : 4,
+            ease : 'expo.out',
+        },
+        scrollTrigger : {
+            trigger : el,
+            toggleActions : 'play pause resume reset',
+        }
+    });
+    tm.from(counter, {
+        textContent : 0,
+        modifiers : {
+            textContent : (textContent) => {
+                return textContent.toFixed();
+            },
+        },
+    });
+    tm.to(el, {
+        '--p' : tg,
+    }, 0);
 });
