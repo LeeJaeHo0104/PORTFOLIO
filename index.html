@@ -1,17 +1,25 @@
 <!DOCTYPE html>
 <html lang="ko">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="퍼블리셔 이재호 포트폴리오 입니다.">
+    <meta name="keyword" content="퍼블리셔, 포트폴리오, 프로젝트, 개인 프로젝트, 이재호, publisher, portfolio, project, web designer, html5, css, javascript, jquery, scss">
+    <meta name="author" content="이재호">
+    <meta property="og:title" content="포트폴리오">
+	<meta property="og:url" content="https://leejaeho0104.github.io/PORTFOLIO/">
+	<meta property="og:type" content="website">
+	<meta property="og:image" content="./img/portfolio.PNG/">
+	<meta property="og:site_name" content="이재호 포트폴리오">
+	<meta property="og:description" content="퍼블리셔 이재호 포트폴리오 입니다.">
     <title>이재호-포트폴리오</title>
     <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css'> <!-- font-awesome -->
     <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet"> <!-- Space Grotesk google font -->
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="shortcut icon" href="./img/logo/logo.png" type="image/x-icon">
 </head>
-
 <body>
     <main>
         <div class="first">
@@ -170,8 +178,12 @@
                         <div class="sub">
                             <div class="sub_title">1. 실시간 날씨 정보 구현</div>
                             <div class="sub_text">
-                                openwheathermap 사이트에서 날씨 정보 api를 <span class="bold">getJSON 함수</span>로 받았습니다.&nbsp;
-                                <span class="bold">append 함수</span>를 이용하여 클래스 wIcon 태그에 날씨 아이콘 이미지를 받아 넣었고, 클래스 tempNow 태그에 현재 온도 정보를 받아 넣었습니다.
+                                <span class="bold">async</span>와 <span class="bold">await</span>를 사용하여 <span class="bold">비동기적</span>으로 날씨 정보를 표현하였습니다.
+                                <span class="bold">먼저 fetch 함수</span>를 사용하여 OpenWeatherMap API로부터 날씨 데이터를 요청하였고,&nbsp;
+                                이때, <span class="bold">await</span>를 사용하여 요청 결과가 도착할 때까지 기다립니다.&nbsp;
+                                응답에 성공하면, <span class="bold">.json() 메서드</span>를 사용하여 JSON 형태로 변환합니다. 이 과정도 비동기적으로 처리되므로 <span class="bold">await</span>를 사용합니다.&nbsp;
+                                변환된 JSON 데이터에서 필요한 정보(현재 온도, 최고 온도, 최저 온도, 체감 온도, 날씨 아이콘)를 추출하여 <span class="bold">innerHTML</span>을 이용해 요소에 삽입합니다. 날씨 아이콘의 경우, 받아온 아이콘 코드를 사용하여 이미지 URL을 생성하고, 해당 이미지를 페이지에 표시합니다.&nbsp;
+                                요청 과정에서 오류가 발생하면 <span class="bold">catch 블록</span>이 실행되어 에러 메시지를 출력합니다.
                             </div>
                         </div>
                         <div class="code_capture">
@@ -184,7 +196,7 @@
                                 <img src="./img/project/project1/weather_html.png" alt="weather">
                             </div>
                             <div class="capture3">
-                                <p>Java Script 코드</p>
+                                <p>Java Script 코드<span>(마우스를 올려주세요)</span></p>
                                 <img  class="weather_capJS" src="./img/project/project1/weather_js.png" alt="weather">
                             </div>
                         </div>
@@ -251,7 +263,7 @@
                                 Swiper 라이브러리를 이용한 슬라이드 구현
                             </div>
                             <div class="desc2">
-                                Gsap 라이브러리를 이용한 스티키 Nav 구현
+                                바닐라 자바스크립트로 스크롤 애니메이션 구현
                             </div>
                             <div class="desc3">
                                 웹 접근성, 웹표준 준수

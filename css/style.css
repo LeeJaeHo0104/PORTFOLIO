@@ -609,7 +609,7 @@ ul.dep1 > li > a:hover{
 .description_section{
     display: flex;
     flex-direction: column;
-    gap: 3rem;
+    gap: 1rem;
     height: 70vh;
     padding: 3rem  5rem;
 }
@@ -659,7 +659,7 @@ ul.dep1 > li > a:hover{
 .pr1_description .description2 .code_capture p{
     color: #0054a6;
 }
-.pr1_description .description2 .code_capture p span{
+.pr1_description .description1 .code_capture p span, .pr1_description .description2 .code_capture p span{
     font-size: 1.6rem;
     color: #303133;
     font-weight: 600;
@@ -677,10 +677,14 @@ ul.dep1 > li > a:hover{
     width: 50rem;
 }
 .pr1_description img.weather_cap{
-    width: 30rem;
+    width: 50rem;
 }
 .pr1_description img.weather_capJS{
-    width: 105rem;
+    width: 55rem;
+    transition: 0.8s;
+}
+.pr1_description img.weather_capJS:hover{
+    transform: translateX(-22rem) scale(3);
 }
 /* ========== project1_DESC ========== */
 
