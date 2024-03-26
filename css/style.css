@@ -280,8 +280,35 @@ ul.dep1 > li > a:hover{
     margin: auto;
     background-color: #29A587;
     border-radius: 50%;
-    position: relative;
 }
+.mask_circle{
+    position: relative;
+    top: -40%;
+    overflow: hidden;
+    width: 50em;
+    height: 70em;
+    margin: auto;
+    border-bottom-left-radius : 249px;
+    border-bottom-right-radius : 249px;
+}
+.mask_circle:before{
+    display: block;
+    position: absolute;
+    top: -10%;
+    left: -11%;
+    content: '';
+    width: 80rem;
+    height: 80rem;
+    background-image: url(../img/profile/profile_img.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+/* .profile{
+    position: absolute;
+    width: 40rem;
+    top: -30%;
+    left: 2%;
+} */
 .about_ani{
     position: relative;
 }
@@ -849,6 +876,10 @@ img.scroll_capture:hover{
     transform: translate(25rem, -13rem) scale(2.5);
 }
 /* ========== project2 description ========== */
+
+/* ========== project3 ========== */
+
+/* ========== project3 ========== */
 
 
 /* ========== skill ========== */
