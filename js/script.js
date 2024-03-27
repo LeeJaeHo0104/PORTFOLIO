@@ -260,7 +260,6 @@ window.onload = function(){
         robot.style.left = '39.5%'
         setInterval(function(){
             robot.style.top = '-100%'
-            // robot.style.left = '30%'
-        }, 5000)
+        }, 6000)
     }, 500);
 }
