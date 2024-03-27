@@ -65,9 +65,24 @@ const pr2Ani1 = bodymovin.loadAnimation({
 });
 /* ========== project2 ========== */
 
-/* ========== skill ========== */
+/* ========== project3 ========== */
+//차
+const car = bodymovin.loadAnimation({
+	container : document.querySelector('.pr3_car'),
+    renderer : 'svg',
+    loop : true,
+    autoplay : true,
+    path : './img/money.json',
+});
+const greenAni = bodymovin.loadAnimation({
+	container : document.querySelector('.green_ani'),
+    renderer : 'svg',
+    loop : true,
+    autoplay : true,
+    path : './img/green_ani.json',
+});
+/* ========== project3 ========== */
 
-/* ========== skill ========== */
 
 
 /* ========== contact ========== */
@@ -123,7 +138,7 @@ m1FullPage.addEventListener('mouseleave', function(){
 
 const pc2FullPage = document.querySelector('.pc2_full_page');
 const m2FullPage = document.querySelector('.m2_full_page');
-/* ========== 프로젝트1 변수 ========== */
+/* ========== 프로젝트2 변수 ========== */
 
 pc2FullPage.addEventListener('mouseenter', function(){
 	pc2FullPage.style.backgroundPosition = 'center 100%';
@@ -137,6 +152,17 @@ m2FullPage.addEventListener('mouseenter', function(){
 m2FullPage.addEventListener('mouseleave', function(){
 	m2FullPage.style.backgroundPosition = 'center 0%';
 });
+
+
+const pc3FullPage = document.querySelector('.pc3_full_page');
+/* ========== 프로젝트3 변수 ========== */
+pc3FullPage.addEventListener('mouseenter', function(){
+	pc3FullPage.style.backgroundPosition = 'center 100%';
+});
+pc3FullPage.addEventListener('mouseleave', function(){
+	pc3FullPage.style.backgroundPosition = 'center 0%';
+});
+
 
 //스킬바 애니메이션
 const circles = document.querySelectorAll('.circular-pbar');

@@ -347,7 +347,7 @@ ul.dep1 > li > a:hover{
 
 /* ========== horizontal ========== */
 .horizontal {
-    width: 400%;
+    width: 600%;
     height: 100vh;
     display: flex;
     flex-wrap: nowrap;
@@ -779,6 +779,10 @@ ul.dep1 > li > a:hover{
 .pr2_compatibility:before {
     background: #E70017;
 }
+.sec3 .project_desc .desc1 span{
+    font-size: 1.6rem;
+    color: #777;
+}
 .sec3 .project_skill > .skill_title {
     background-color: #E70017;
 }
@@ -823,7 +827,7 @@ ul.dep1 > li > a:hover{
     color: #E70017;
 }
 .pr2_description .description_section{
-    gap: 5rem;
+    gap: 3rem;
 }
 .sec3 .mouse_on2{
     position: absolute;
@@ -878,8 +882,169 @@ img.scroll_capture:hover{
 /* ========== project2 description ========== */
 
 /* ========== project3 ========== */
+.sec4{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.pr3_ani{
+    position: relative;
+}
+.pr3_car{
+    position: absolute;
+    top: -8rem;
+    left: 6rem;
+    width: 10rem;
+    animation: money 10s infinite;
+}
+@keyframes money {
+    0%{transform: translate(0);}
+    50%{transform: translateX(90rem);}
+    100%{transform: translateX(0rem);}
+}
+.green_ani{
+    position: absolute;
+    top: 27rem;
+    left: 101rem;
+    width: 15rem;
+    z-index: -1;
+}
+
+.mouse_on3{
+    position: absolute;
+    top: 5%;
+    right: 3%;
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: #54aa4c;
+    opacity: 0.6;
+}
+.pc3_full_page{
+    width: 90%;
+    height: 70rem;
+    border: 3px solid #ddd;
+    border-radius: 3rem;
+    margin-left: 5rem;
+    background-repeat: no-repeat;
+    background-position: center 0%;
+    background-size: 100%;
+    transition: all 2s ease-in-out;
+    box-shadow: 3px 3px 3px #d9d9d9;
+    background-image: url(../img/project/project3/project3_fullpage.png);
+}
+.project3_num:before{
+    background-color: #54aa4c;
+}
+.sec4 .skill_title{
+    background-color: #54aa4c;
+}
+.sec4 .skill_title::before{
+    background-color: #54aa4c;
+}
+.sec4 .pr3_compatibility{
+    background-color: #54aa4c;
+}
+.sec4 .pr3_compatibility:before{
+    background-color: #54aa4c;
+}
+.sec4 .table_title{
+    color: #54aa4c;
+}
+.sec4 .table_title{
+    color: #54aa4c;
+}
+.sec4 .device{
+    line-height: 8rem;
+}
+.sec4 .site{
+    color: #54aa4c;
+    border: 2px solid #54aa4c;
+}
+.sec4 .site a{
+    color: #54aa4c;
+}
+.sec4 .site:hover{
+    background-color: #54aa4c;
+}
+.sec4 .site:hover a,
+.sec4 .site:hover i{
+    color: #fff;
+}
+.sec4 .github{
+    color: #54aa4c;
+    border: 2px solid #54aa4c;
+}
+.sec4 .github a{
+    color: #54aa4c;
+}
+.sec4 .github:hover{
+    background-color: #54aa4c;
+}
+.sec4 .github:hover a,
+.sec4 .github:hover i{
+    color: #fff;
+}
 
 /* ========== project3 ========== */
+
+/* ========== project3 DESC ========== */
+.pr3_description .description_title{
+    color: #54aa4c;
+}
+.pr3_description .capture1 p{
+    color: #54aa4c;
+}
+.pr3_description .description1{
+    margin-bottom: 3rem;
+}
+.pr3_description .capture1 p span{
+    font-size: 1.6rem;
+    color: #303133;
+    font-weight: 600;
+    margin-left: 1rem;
+    opacity: 0.7;
+}
+.pr3_description .capture1 img{
+    width: 70rem;
+    transition: all 0.8s;
+}
+.pr3_description .capture1 img:hover{
+    transform: translateX(20rem) scale(1.7);
+}
+.pr3_description .description2 .code_capture{
+    display: flex;
+    /* align-items: center; */
+}
+.pr3_description .capture3{
+    margin-right: 8rem;
+}
+.pr3_description .capture3 p,
+.pr3_description .capture4 p{
+    color: #54aa4c;
+}
+.pr3_description .capture3 p span,
+.pr3_description .capture4 p span{
+    font-size: 1.6rem;
+    color: #303133;
+    font-weight: 600;
+    margin-left: 1rem;
+    opacity: 0.7;
+}
+.pr3_description .capture3 .fadeInOut_hc{
+    width: 20rem;
+    transition: all 0.8s;
+}
+.pr3_description .capture3 .fadeInOut_hc:hover{
+    transform: translate(5rem, -5rem) scale(1.8);
+}
+.fadeInOut_js{
+    width: 32rem;
+    transition: all 0.8s;
+}
+.fadeInOut_js:hover{
+    transform: translate(15rem, -13rem) scale(2.5);
+}
+/* ========== project3 DESC ========== */
 
 
 /* ========== skill ========== */
