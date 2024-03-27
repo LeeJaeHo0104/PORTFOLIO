@@ -8,7 +8,24 @@ html {
 body {
     background-color: #fdfdfd;
 }
-
+.robot{
+    position: absolute;
+    top: -100%;
+    left: 50%;
+    z-index: 99999;
+    transform: translate(-50%, -50%);
+    transition: all 1s;
+    animation: robot 2s infinite;
+}
+@keyframes robot {
+    0%{transform: translateY(0rem);}
+    50%{transform: translateY(3rem);}
+    100%{transform: translateY(0rem);}
+}
+.robot img{
+    width: 40rem;
+    filter: drop-shadow(0px 3px 5px #a7a7a7);
+}
 /* ========== first ========== */
 .first {
     width: 100%;
@@ -66,13 +83,18 @@ body {
 .first > nav > .logo {
     width: 22rem;
     height: 22rem;
+    margin-right: auto;
 }
 ul.dep1 {
-    width: 85%;
-    height: 100%;
+    width: 25%;
+    height: 7%;
     display: flex;
     align-items: center;
-    justify-content: flex-end;
+    position: fixed;
+    right: 5rem;
+    z-index: 999;
+    transition: all 0.8s;
+    border-bottom-left-radius: 2rem;
 }
 ul.dep1 > li {
     font-family: "Space Grotesk", sans-serif;
@@ -214,6 +236,7 @@ ul.dep1 > li > a:hover{
     font-family: "Space Grotesk", sans-serif;
     color: #303133;
     position: relative;
+    transition: all 0.5s;
 }
 .second > .title:before,
 .second > .title:after {
@@ -274,6 +297,10 @@ ul.dep1 > li > a:hover{
     margin-bottom: 3rem;
     color: #303133;
 }
+.dot{
+    color: #29A587;
+    font-weight: bold;
+}
 .green_circle {
     width: 50em;
     height: 50em;
@@ -303,12 +330,6 @@ ul.dep1 > li > a:hover{
     background-repeat: no-repeat;
     background-size: contain;
 }
-/* .profile{
-    position: absolute;
-    width: 40rem;
-    top: -30%;
-    left: 2%;
-} */
 .about_ani{
     position: relative;
 }
@@ -1013,7 +1034,6 @@ img.scroll_capture:hover{
 }
 .pr3_description .description2 .code_capture{
     display: flex;
-    /* align-items: center; */
 }
 .pr3_description .capture3{
     margin-right: 8rem;
@@ -1063,6 +1083,7 @@ img.scroll_capture:hover{
     color: #303133;
     position: relative;
     margin-top: 5rem;
+    transition: all 0.5s;
 }
 .skill > .title:before,
 .skill > .title:after {
@@ -1165,6 +1186,7 @@ img.scroll_capture:hover{
     color: #303133;
     position: relative;
     margin-top: 5rem;
+    transition: all 0.5s;
 }
 .contact > .title:before,
 .contact > .title:after {

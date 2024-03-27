@@ -102,6 +102,18 @@ const titleEffect = bodymovin.loadAnimation({
 });
 /* ========== contact ========== */
 
+//a태그 부드러운 움직임
+document.querySelectorAll('.dep1 a').forEach(aTag => {
+    aTag.addEventListener('click', function (e) {
+        e.preventDefault();
+
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth'
+        });
+    });
+});
+
+
 //gsap 가로스크롤
 let sections = gsap.utils.toArray('.section');
 
@@ -192,3 +204,63 @@ circles.forEach((el) => {
         '--p' : tg,
     }, 0);
 });
+
+//스크롤 애니메이션
+window.addEventListener('scroll', function() {
+    let height = window.scrollY;
+    console.log(`스크롤 높이 : ` + height);
+
+    const about = this.document.getElementById('ABOUT');
+    const dep1 = document.querySelector('.dep1');
+    const skill = document.querySelector('.skill .title');
+    const contact = document.querySelector('.contact .title');
+
+
+    if(height > 300){
+        about.style.opacity = 1;
+        about.style.transform = 'translateY(0rem)'
+    }else{
+        about.style.opacity = 0;
+        about.style.transform = 'translateY(5rem)'
+    }
+
+
+    if(height > 900){
+        dep1.style.backgroundColor = '#b8dbd240';
+        dep1.style.top = 0;
+        dep1.style.right = 0;
+    }else{
+        dep1.style.backgroundColor = 'transparent';
+        dep1.style.top = '2rem';
+        dep1.style.right = '5rem';
+    }
+
+    if(height  > 13750){
+        skill.style.opacity = 1;
+        skill.style.transform = 'translateY(0rem)'
+    }else{
+        skill.style.opacity = 0;
+        skill.style.transform = 'translateY(5rem)'
+    }
+
+    if(height  > 14500){
+        contact.style.opacity = 1;
+        contact.style.transform = 'translateY(0rem)'
+    }else{
+        contact.style.opacity = 0;
+        contact.style.transform = 'translateY(5rem)'
+    }
+});
+
+///onload 함수
+window.onload = function(){
+    setInterval(function(){
+        const robot = document.querySelector('.robot');
+        robot.style.top = '20%'
+        robot.style.left = '39.5%'
+        setInterval(function(){
+            robot.style.top = '-100%'
+            // robot.style.left = '30%'
+        }, 5000)
+    }, 500);
+}
