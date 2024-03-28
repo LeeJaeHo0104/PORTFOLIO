@@ -16,6 +16,15 @@ const mouse = bodymovin.loadAnimation({
     path : './img/mouse.json',
 });
 
+//클릭
+const click = bodymovin.loadAnimation({
+    container : document.querySelector('.click_ani'),
+    renderer : 'svg',
+    loop : true,
+    autoplay : true,
+    path : './img/click.json',
+});
+
 /* ========== ABOUT ========== */
 const aboutMainAni = bodymovin.loadAnimation({
 	container : document.querySelector('.about_ani_4'),
