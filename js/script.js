@@ -180,7 +180,6 @@ pc3FullPage.addEventListener('mouseleave', function(){
 const circles = document.querySelectorAll('.circular-pbar');
 circles.forEach((el) => {
     const counter = el.querySelector('.circular-pbar-counter');
-    console.log('counter: ', counter.textContent);
     const tg = counter.textContent+"%";
     const tm = gsap.timeline({
         defaults : {
@@ -208,7 +207,6 @@ circles.forEach((el) => {
 //스크롤 애니메이션
 window.addEventListener('scroll', function() {
     let height = window.scrollY;
-    console.log(`스크롤 높이 : ` + height);
 
     const about = this.document.getElementById('ABOUT');
     const dep1 = document.querySelector('.dep1');
@@ -225,7 +223,7 @@ window.addEventListener('scroll', function() {
     }
 
 
-    if(height > 900){
+    if(height >= 900){
         dep1.style.backgroundColor = '#b8dbd240';
         dep1.style.top = 0;
         dep1.style.right = 0;

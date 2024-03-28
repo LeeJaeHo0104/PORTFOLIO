@@ -476,7 +476,6 @@ ul.dep1 > li > a:hover{
 .project_title {
     font-size: 5rem;
     font-weight: 700;
-    padding-bottom: 2.5rem;
     display: flex;
     align-items: center;
 }
@@ -484,6 +483,14 @@ ul.dep1 > li > a:hover{
     width: 7rem;
     height: 7rem;
     margin-left: 1rem;
+}
+.rere{
+    font-size: 1.6rem;
+    color: #303133;
+    font-weight: 600;
+    margin-left: 1rem;
+    opacity: 0.5;
+    padding-bottom: 2rem;
 }
 .project_compatibility{
     display: flex;
