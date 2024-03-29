@@ -25,6 +25,7 @@ const click = bodymovin.loadAnimation({
     path : './img/click.json',
 });
 
+
 /* ========== ABOUT ========== */
 const aboutMainAni = bodymovin.loadAnimation({
 	container : document.querySelector('.about_ani_4'),
@@ -224,13 +225,14 @@ window.addEventListener('scroll', function() {
     const skill = document.querySelector('.skill .title');
     const contact = document.querySelector('.contact .title');
 
-
-    if(height > 300){
-        about.style.opacity = 1;
-        about.style.transform = 'translateY(0rem)'
-    }else{
-        about.style.opacity = 0;
-        about.style.transform = 'translateY(5rem)'
+    if(window.innerWidth > 700){
+        if(height > 300){
+            about.style.opacity = 1;
+            about.style.transform = 'translateY(0rem)'
+        }else{
+            about.style.opacity = 0;
+            about.style.transform = 'translateY(5rem)'
+        }
     }
 
 
@@ -263,12 +265,22 @@ window.addEventListener('scroll', function() {
 
 ///onload 함수
 window.onload = function(){
-    setInterval(function(){
-        const robot = document.querySelector('.robot');
-        robot.style.top = '20%'
-        robot.style.left = '39.5%'
-        setInterval(function(){
-            robot.style.top = '-100%'
-        }, 6000)
-    }, 500);
+    const robot = document.querySelector('.robot');
+    if(window.innerWidth > 700){
+            setInterval(function(){
+            robot.style.top = '20%'
+            robot.style.left = '39.5%'
+            setInterval(function(){
+                robot.style.top = '-100%'
+            }, 6000)
+        }, 500);
+        }else{
+            setInterval(function(){
+                robot.style.top = '10%'
+                robot.style.left = '30%'
+                setInterval(function(){
+                    robot.style.top = '-100%'
+                }, 6000)
+            }, 500);
+        }
 }

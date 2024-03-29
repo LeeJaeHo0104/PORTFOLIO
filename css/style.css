@@ -1,3 +1,5 @@
+@import "compass/css3";
+
 html {
     overflow-x: hidden;
     overflow-y: scroll;
@@ -133,6 +135,23 @@ ul.dep1 > li > a:hover{
     border-radius: 2rem;
     background-color: #ebebeb;
     transform: rotate(-90deg);
+    animation: pulseL 1.5s infinite;
+}
+.cnt_left:hover{
+    animation: none;
+}
+@keyframes pulseL {
+    0% {
+        transform: rotate(-90deg) scale(.9);
+    }
+    70% {
+        transform: rotate(-90deg) scale(1);
+        box-shadow: 0 0 0 50px rgba(#5a99d4, 0);
+    }
+        100% {
+        transform: rotate(-90deg) scale(.9);
+        box-shadow: 0 0 0 0 rgba(#5a99d4, 0);
+    }
 }
 .cnt_left a {
     font-size: 2rem;
@@ -210,6 +229,23 @@ ul.dep1 > li > a:hover{
     border-radius: 2rem;
     background-color: #ebebeb;
     transform: rotate(90deg);
+    animation: pulseR 1.5s infinite;
+}
+.cnt_right:hover{
+    animation: none;
+}
+@keyframes pulseR {
+    0% {
+        transform: rotate(90deg) scale(.9);
+    }
+    70% {
+        transform: rotate(90deg) scale(1);
+        box-shadow: 0 0 0 50px rgba(#5a99d4, 0);
+    }
+        100% {
+        transform: rotate(90deg) scale(.9);
+        box-shadow: 0 0 0 0 rgba(#5a99d4, 0);
+    }
 }
 .cnt_right > a {
     font-size: 2rem;
@@ -302,6 +338,12 @@ ul.dep1 > li > a:hover{
     margin-bottom: 3rem;
     color: #303133;
 }
+.int_text a{
+    color: #303133;
+}
+.int_text a:hover{
+    color: #29A587;
+}
 .dot{
     color: #29A587;
     font-weight: bold;
@@ -373,7 +415,7 @@ ul.dep1 > li > a:hover{
 
 /* ========== horizontal ========== */
 .horizontal {
-    width: 300%;
+    width: 600%;
     height: 100vh;
     display: flex;
     flex-wrap: nowrap;
@@ -653,6 +695,101 @@ ul.dep1 > li > a:hover{
 }
 /* ========== project1 ========== */
 
+ /* ========== project1_DESC ========== */
+ .description_title{
+    font-size: 4.5rem;
+    font-weight: 600;
+    margin: 2rem 0 0 3rem;
+}
+.pr1_description .description_title{
+    color: #0054a6;
+}
+.description_title span{
+    font-size: 2rem;
+    font-weight: 400;
+    color: #303133;
+}
+.description_section{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    height: 70vh;
+    padding: 3rem  5rem;
+}
+.description1, .description2{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+.sub_title{
+    font-size: 3.5rem;
+    font-weight: 500;
+}
+.sub_text{
+    margin-top: 3rem;
+    color: #303133;
+    font-size: 2rem;
+    line-height: 1.6;
+}
+.bold{
+    font-weight: 800;
+}
+.code_capture{
+    margin-top: 2rem;
+    display: flex;
+    align-items: flex-start;
+    gap: 2rem;
+}
+.code_capture p{
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+}
+.pr1_description .description1 .code_capture p{
+    color: #0054a6;
+}
+.description1 .code_capture img{
+    width: 40rem;
+}
+.code_capture p{
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    transition: all 0.3s;
+}
+.pr1_description .description2 .code_capture p{
+    color: #0054a6;
+}
+.pr1_description .description1 .code_capture p span, .pr1_description .description2 .code_capture p span{
+    font-size: 1.6rem;
+    color: #303133;
+    font-weight: 600;
+    margin-left: 1rem;
+    opacity: 0.7;
+}
+.description2 .code_capture img[alt="banner"]{
+    width: 100rem;
+    transition: all 0.8s ease-in-out;
+}
+.description2 .code_capture img[alt="banner"]:hover{
+    transform: translate(-10rem, -5rem) scale(1.8);
+}
+.main_banner{
+    width: 50rem;
+}
+.pr1_description img.weather_cap{
+    width: 50rem;
+}
+.pr1_description img.weather_capJS{
+    width: 55rem;
+    transition: 0.8s;
+}
+.pr1_description img.weather_capJS:hover{
+    transform: translateX(-22rem) scale(3);
+}
+/* ========== project1_DESC ========== */
 
 /* ========== project2 ========== */
 .sec3 {
@@ -769,6 +906,64 @@ ul.dep1 > li > a:hover{
 }
 /* ========== project2 ========== */
 
+/* ========== project2 description ========== */
+.pr2_description .description_title{
+    color: #E70017;
+}
+.pr2_description .description_section{
+    gap: 3rem;
+}
+.sec3 .mouse_on2{
+    position: absolute;
+    top: 5%;
+    right: 3%;
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: #E70017;
+    opacity: 0.6;
+}
+.pr2_description .code_capture{
+    gap: 5rem;
+}
+.pr2_description .description1 .code_capture p{
+    color: #E70017;
+    margin-bottom: 1rem;
+}
+.capture_border{
+    border: 1px solid;
+}
+.pr2_description .description2 .code_capture p{
+    color: #E70017;
+}
+.pr2_description .capture1 img{
+    width: 50rem;
+}
+section.pr2_description .description1 img.sticky_js{
+    width: 80rem;
+    transition: all 0.8s ease-in-out;
+}
+.sticky_js:hover{
+    transform: translate(-6rem, 7rem) scale(2);
+}
+.pr2_description .capture1 p:nth-child(3){
+    margin-top: 2rem;
+}
+.pr2_description .description1 .code_capture p span,
+.pr2_description .description2 .code_capture p span{
+    font-size: 1.6rem;
+    color: #303133;
+    font-weight: 600;
+    margin-left: 1rem;
+    opacity: 0.7;
+}
+.pr2_description img.scroll_capture{
+    width: 35rem;
+    transition: all 0.8s ease-in-out;
+}
+img.scroll_capture:hover{
+    transform: translate(25rem, -13rem) scale(2.5);
+}
+/* ========== project2 description ========== */
 
 /* ========== project3 ========== */
 .sec4{
@@ -876,6 +1071,62 @@ ul.dep1 > li > a:hover{
 
 /* ========== project3 ========== */
 
+.pr3_description .description_title{
+    color: #54aa4c;
+}
+.pr3_description .capture1 p{
+    color: #54aa4c;
+}
+.pr3_description .description1{
+    margin-bottom: 3rem;
+}
+.pr3_description .capture1 p span{
+    font-size: 1.6rem;
+    color: #303133;
+    font-weight: 600;
+    margin-left: 1rem;
+    opacity: 0.7;
+}
+.pr3_description .capture1 img{
+    width: 70rem;
+    transition: all 0.8s;
+}
+.pr3_description .capture1 img:hover{
+    transform: translateX(20rem) scale(1.7);
+}
+.pr3_description .description2 .code_capture{
+    display: flex;
+}
+.pr3_description .capture3{
+    margin-right: 8rem;
+}
+.pr3_description .capture3 p,
+.pr3_description .capture4 p{
+    color: #54aa4c;
+}
+.pr3_description .capture3 p span,
+.pr3_description .capture4 p span{
+    font-size: 1.6rem;
+    color: #303133;
+    font-weight: 600;
+    margin-left: 1rem;
+    opacity: 0.7;
+}
+.pr3_description .capture3 .fadeInOut_hc{
+    width: 20rem;
+    transition: all 0.8s;
+}
+.pr3_description .capture3 .fadeInOut_hc:hover{
+    transform: translate(5rem, -5rem) scale(1.8);
+}
+.fadeInOut_js{
+    width: 32rem;
+    transition: all 0.8s;
+}
+.fadeInOut_js:hover{
+    transform: translate(15rem, -13rem) scale(2.5);
+}
+/* ========== project3 DESC ========== */
 
 /* ========== skill ========== */
 .skill{

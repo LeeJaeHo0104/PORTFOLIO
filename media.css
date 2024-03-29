@@ -1,40 +1,98 @@
+/* 1700 */
 @media screen and (max-width: 1700px){
     /* ========== first ========== */
     ul.dep1{right: 5%;}
     /* ========== first ========== */
-}
 
+    /* ========== second ========== */
+    .introduce{gap: 10rem;}
+    /* ========== second ========== */
+
+    /* ========== pr1 desc ========== */
+    .pr1_description img.weather_capJS:hover{transform: translateX(-40rem) scale(2.7);}
+    /* ========== pr1 desc ========== */
+}
+/* 1700 */
+
+/* 1600 */
 @media screen and (max-width: 1600px){
     /* ========== first ========== */
     .first > .cnt{gap: 3rem;}
     .cnt_mid > .cnt_main{font-size: 11.5rem;}
     /* ========== first ========== */
+    
+    /* ========== second ========== */
+    .introduce{gap: 7rem;}
+    .second_content > .content_left{width: 55%;}
+    .second_content > .content_right{width: 45%;}
+    .second > .title{font-size: 6.5rem;}
+    .second > .title:before{
+        width: 3.5rem;
+        height: 3.5rem;
+    }
+    .second > .title:after{width: 9rem;}
+    .about_ani_2 img{
+        top: 33rem;
+        left: 3%;
+    }
+    /* ========== second ========== */
 }
+/* 1600 */
 
+/* 1450 */
 @media screen and (max-width: 1450px){
     /* ========== first ========== */
     .first > .cnt{width: 70%;}
     .cnt_mid > .cnt_main{font-size: 10.5rem;}
     .left_abc, .right_abc{width: 12%;}
     /* ========== first ========== */
-}
 
+    /* ========== second ========== */
+    .introduce > .int_title{margin-left: 10rem;}
+    /* ========== second ========== */
+}
+/* 1450 */
+
+/* 1350 */
 @media screen and (max-width: 1350px){
+    .robot img{width: 30rem;}
     /* ========== first ========== */
     .cnt_mid > .cnt_main{font-size: 8.5rem;}
     .first > .cnt{gap: 1rem;}
     /* ========== first ========== */
-}
 
+    /* ========== second ========== */
+    .introduce li{font-size: 2.7rem;}
+    .green_circle{
+        width: 45rem;
+        height: 45rem;
+    }
+    .mask_circle{
+        top: -55%;
+        left: -5%;
+        width: 46rem;
+        border-bottom-left-radius: 547px;
+        border-bottom-right-radius: 410px;
+    }
+    .mask_circle:before{
+        top: 0%;
+        left: -7%;
+        height: 70rem;}
+    /* ========== second ========== */
+}
+/* 1350 */
+
+/* 1200 */
 @media screen and (max-width: 1200px){
     /* ========== first ========== */
+    .first{height: 80rem;}
     .first > nav > .logo{
         width: 19rem;
         height: 19rem;
     }
     .first > .cnt{width: 100%;}
     .cnt_mid > .cnt_main{
-        font-size: 5.5rem;
+        font-size: 7.5rem;
         margin-bottom: 11rem;
     }
     .cnt_left, .cnt_right{width: 12rem;}
@@ -54,10 +112,15 @@
     }
     /* ========== first ========== */
 }
+/* 1200 */
 
+/* 1000 */
 @media screen and (max-width: 1000px){
+    .robot img{width: 27rem;}
+
     /* ========== first ========== */
     .left_abc, .right_abc {width: 13%;}
+    .cnt_mid > .cnt_main{font-size: 6.5rem;}
     .cnt_left, .cnt_right{
         height: 4rem;
         line-height: 4rem;
@@ -74,21 +137,125 @@
         100%{transform: translateX(0);}
     }
     /* ========== first ========== */
-}
 
+    /* ========== second ========== */
+    .second > .title{
+    height: 15rem;
+    line-height: 15rem;
+    font-size: 5rem;
+    }
+    .second > .title:before{
+        width: 3rem;
+        height: 3rem;
+        left: 53%;
+    }
+    .second > .title:after{
+        width: 8rem;
+        left: 53%;
+        }
+    .content_title{
+        font-size: 4rem;
+        text-align: left;
+        margin-left: 8rem;
+    }
+    .introduce{gap: 3rem;}
+    .introduce > .int_title{margin-left: 3rem;}
+    .introduce li{
+        font-size: 2.4rem;
+        margin-bottom: 2rem;
+    }
+    .second_content > .content_left{
+        width: 45%;
+        gap: 5rem;
+    }
+    .green_circle{
+        width: 40rem;
+        height: 40rem;
+    }
+    .mask_circle{
+        top: -75%;
+        left: -6%;
+        width: 42rem;
+        border-bottom-left-radius: 540px;
+        border-bottom-right-radius: 410px;
+    }
+    .mask_circle:before{
+        top: 16%;
+        left: 0%;
+        height: 60rem;
+    }
+    .about_ani_1 img{top: -6rem;}
+    .about_ani_2 img{top: 35rem;}
+    .about_ani_3 img{top: 40rem;}
+    /* ========== second ========== */
+}
+/* 1000 */
+
+/* 700 */
 @media screen and (max-width: 700px){
+    .robot img{width: 27rem;}
     /* ========== first ========== */
+    .first{height: 60rem;}
     .first > .cnt{
-        margin: auto;
+        margin: 8rem auto;
         height: 55%;
     }
     .cnt_mid > .cnt_main{margin-top: 3rem;}
     .left_abc, .right_abc {width: 10%;}
     .click_ani{display: none;}
     /* ========== first ========== */
-}
 
+    /* ========== second ========== */
+    .second{
+        height: 110rem;
+    }
+    .second > .title:before{
+        width: 2.7rem;
+        height: 2.7rem;
+        left: 58%;
+    }
+    .second > .title:after{
+        width: 5rem;
+        left: 48%;
+    }
+    .second_content{
+        margin-top: 4rem;
+        flex-direction: column;
+        justify-content: center;
+        gap: 7rem;
+    }
+    .content_left{order:2;}
+    .content_right{
+        order:1;
+    }
+    .second_content > .content_right{
+        width: 57%;
+        margin-top: 6rem;
+    }
+    .second_content > .content_left{
+        width: 53%;
+    }
+    .about_ani_1 img{top: -5rem; left: 90%;}
+    .about_ani_2 img{top: 30rem; left: -20%;}
+    .about_ani_3 img{top: 37rem; left: 85%;}
+    .content_title{
+        margin-left: 4rem;
+    } 
+    .introduce{
+        margin-top: 6rem;
+        width: 100vw;
+        justify-content: flex-start;
+    } 
+    .introduce li {
+        font-size: 2.3rem;
+    }
+    /* ========== second ========== */
+}
+/* 700 */
+
+/* 600 */
 @media screen and (max-width: 600px){
+    .robot img{width: 18rem;}
     /* ========== first ========== */
     .first > .cnt{height: 45%;}
     .first > nav > .logo{
@@ -99,3 +266,4 @@
     .cnt_left, .cnt_right{width: 10rem;}
     /* ========== first ========== */
 }
+/* 600 */

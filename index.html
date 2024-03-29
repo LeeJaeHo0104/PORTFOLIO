@@ -62,7 +62,6 @@
                             Git_Hub
                             <i class="fa-brands fa-github"></i>
                         </a>
-                        <div class="click_ani"></div>
                     </div> <!-- cnt_right -->
                 </div> <!-- cnt -->
         </div> <!-- first -->
@@ -84,8 +83,8 @@
                             <li><span class="dot">·</span> 이재호 <span class="dot">·</span></li>
                             <li><span class="dot">·</span> 26 <span class="dot">·</span></li>
                             <li><span class="dot">·</span> 전자과 <span class="dot">·</span></li>
-                            <li><span class="dot">·</span> 010 - 5351 - 5294 <span class="dot">·</span></li>
-                            <li><span class="dot">·</span> ljh2735294@naver.com <span class="dot">·</span></li>
+                            <li><span class="dot">·</span> <a href="tel:010-5351-5294">010 - 5351 - 5294</a> <span class="dot">·</span></li>
+                            <li><span class="dot">·</span> <a href="mailto:ljh2735294@naver.com">ljh2735294@naver.com</a> <span class="dot">·</span></li>
                             <li><span class="dot">·</span> 경기도 수원시 <span class="dot">·</span></li>
                         </div> <!-- int_text -->
                     </div>
@@ -177,6 +176,60 @@
                     </div>
                 </div> <!-- main_right -->
             </div> <!-- project1 -->
+            <section class="section pr1_description">
+                <div class="description_title">Description <span>(Project1)</span></div>
+                <div class="description_section">
+                    <div class="description1">
+                        <div class="sub">
+                            <div class="sub_title">1. 실시간 날씨 정보 구현</div>
+                            <div class="sub_text">
+                                <span class="bold">async</span>와 <span class="bold">await</span>를 사용하여 <span class="bold">비동기적</span>으로 날씨 정보를 표현하였습니다.
+                                <span class="bold">먼저 fetch 함수</span>를 사용하여 OpenWeatherMap API로부터 날씨 데이터를 요청하였고,&nbsp;
+                                이때, <span class="bold">await</span>를 사용하여 요청 결과가 도착할 때까지 기다립니다. <br>
+                                응답에 성공하면, <span class="bold">.json() 메서드</span>를 사용하여 JSON 형태로 변환합니다. 이 과정도 비동기적으로 처리되므로 <span class="bold">await</span>를 사용합니다.<br>
+                                변환된 JSON 데이터에서 필요한 정보(현재 온도, 최고 온도, 최저 온도, 체감 온도, 날씨 아이콘)를 추출하여 <span class="bold">innerHTML</span>을 이용해 요소에 삽입합니다. <br>
+                                날씨 아이콘의 경우, 받아온 아이콘 코드를 사용하여 이미지 URL을 생성하고, 해당 이미지를 페이지에 표시합니다.&nbsp;
+                                요청 과정에서 오류가 발생하면 <span class="bold">catch 블록</span>이 실행되어 에러 메시지를 출력합니다.
+                            </div>
+                        </div>
+                        <div class="code_capture">
+                            <div class="capture1">
+                                <p>구현 사진</p>
+                                <img class="capture_border weather_cap" src="./img/project/project1/weather.png" alt="weather">
+                            </div>
+                            <div class="capture2">
+                                <p>HTML 코드</p>
+                                <img src="./img/project/project1/weather_html.png" alt="weather">
+                            </div>
+                            <div class="capture3">
+                                <p>Java Script 코드<span>(마우스를 올려주세요)</span></p>
+                                <img  class="weather_capJS" src="./img/project/project1/weather_js.png" alt="weather">
+                            </div>
+                        </div>
+                    </div> <!-- desc1 -->
+                    <div class="description2">
+                        <div class="sub">
+                            <div class="sub_title">2. 슬라이드 배너</div>
+                            <div class="sub_text">
+                                timer 함수를 통해 일정 시간마다 slideFn 함수를 호출하여 배너가 자동으로 넘어가도록 설정하고, 배너 위에 마우스를 올리면 <span class="bold">clearInterval 함수를 이용해</span> 중지되도록 합니다.<br>
+                                사용자가 <span class="bold">'next' 버튼을 클릭하면 배너가 left를 기준으로 0%에서 -100%로 이동</span>하고, <span class="bold">'prev' 버튼을 클릭하면 배너의 left를 기준으로 0%에서 100%로 이동</span>하여 새로운 배너가 나타나는 애니메이션 효과가 실행됩니다.<br>
+                                페이저 버튼을 클릭하면 해당 배너로 직접 이동할 수 있습니다.&nbsp;
+                                모든 애니메이션은 move 함수를 통해 구현되며, 이 함수는 시작 위치와 끝 위치를 매개변수로 받아 CSS 속성을 변경하고 애니메이션을 적용합니다.
+                            </div>
+                        </div>
+                        <div class="code_capture">
+                            <div class="capture1">
+                                <p>구현 사진</p>
+                                <img class="main_banner capture_border" src="./img/project/project1/description/banner.png" alt="main_banner">
+                            </div>
+                            <div class="capture2">
+                                <p>Java Script 코드<span>(마우스를 올려주세요)</span></p>
+                                <img src="./img/project/project1/description/banner_desc.png" alt="banner">
+                            </div>
+                        </div>
+                    </div> <!-- desc2 -->
+                </div> <!-- description_section -->
+            </section> <!-- project1 DESC -->
             <section class="section sec3">
                 <div class="main_left">
                     <div class="pizza_autoby"></div>
@@ -253,6 +306,54 @@
                     </div>
                 </div> <!-- main_right -->
             </section> <!-- project2 -->
+            <section class="section pr2_description">
+                <div class="description_title">Description <span>(Project2)</span></div>
+                <div class="description_section">
+                    <div class="description1">
+                        <div class="sub">
+                            <div class="sub_title">1. Gnb 스티키 메뉴</div>
+                            <div class="sub_text">
+                                <span class="bold">cloneNode 함수</span>와 <span class="bold">true 인자</span>를 사용하여 원래의 gnb 메뉴와 그 자식 요소들을 모두 복제했습니다.&nbsp;
+                                이를 통해 원본 gnb 메뉴의 복사본을 변수 gnbClonedp 저장하였습니다. <br>
+                                이후, <span class="bold">appendChild 함수</span>를 이용해 복제된 gnb 메뉴를 gnbStickyContainer 변수에 추가하였고, 이 과정을 통해 복제된 메뉴가 변수 gnbStickyContainer 안에 위치하게 되었습니다. <br>
+                                마지막으로 <span class="bold">setAttribute 함수</span>를 사용해 복제된 gnb 메뉴 안에 있는 로고 이미지의 소스를 기존의 것과 다른 빨간색 로고 이미지로 변경하였습니다.
+                            </div>
+                        </div>
+                        <div class="code_capture">
+                            <div class="capture1">
+                                <p>기본 Gnb</p>
+                                <img src="./img/project/project2/desc/sticky_1.png" alt="main_banner">
+                                <p>스티키 Gnb</p>
+                                <img class="capture_border" src="./img/project/project2/desc/sticky_2.png" alt="main_banner">
+                            </div>
+                            <div class="capture2">
+                                <p>Java Script 코드<span>(마우스를 올려주세요)</span></p>
+                                <img class="sticky_js" src="./img/project/project2/desc/sticky_js.png" alt="banner">
+                            </div>
+                        </div>
+                    </div> <!-- desc1 -->
+                    <div class="description2">
+                        <div class="sub">
+                            <div class="sub_title">2. 스크롤 애니메이션</div>
+                            <div class="sub_text">
+                                <span class="bold">window.onscroll</span>을 활용하여, 브라우저 창에서 스크롤 이벤트가 발생할 때마다 특정 함수가 실행되도록 설정하였습니다.&nbsp;
+                                먼저 <span class="bold">window.pageYOffset</span>을 이용하여 스크롤된 높이 정보를 height 변수에 저장하였고, <span class="bold">window.innerWidth</span>를 사용하여 화면의 너비를 width 변수에 저장했습니다.&nbsp;
+                                sec1Title이라는 변수를 대상으로, 화면의 너비가 1100px 이상인 경우와 그렇지 않은 경우를 구분하기 위해 <span class="bold">if-else</span> 조건문을 사용했습니다. <br>
+                                if문 내에서는 화면 높이가 400px 이상인 경우와 그렇지 않은 경우를 구분했습니다.&nbsp;
+                                else문 내에서는 화면 높이가 150px 이상인 경우와 그렇지 않은 경우를 구분했습니다. <br>
+                                이렇게 설정함으로써, 다양한 화면 크기와 스크롤 위치에 따라 조건적으로 sec1Title에 다른 스타일을 적용할 수 있게 되었습니다. <br>
+                                이러한 방식으로 <span class="bold">반응형 디자인</span>에서 설정한 조건에 따라 정상적으로 함수가 작동하도록 하였습니다.
+                            </div>
+                        </div>
+                        <div class="code_capture">
+                            <div class="capture1">
+                                <p>Java Script 코드<span>(마우스를 올려주세요)</span></p>
+                                <img class="scroll_capture" src="./img/project/project2/desc/scroll.png" alt="main_banner">
+                            </div>
+                        </div>
+                    </div> <!-- desc2 -->
+                </div> <!-- description_section -->
+            </section> <!-- project2 DESC -->
             <section class="section sec4">
                 <div class="main_left">
                     <div class="pr3_ani">
@@ -327,6 +428,53 @@
                     </div>
                 </div> <!-- main_right -->
             </section> <!-- project3 -->
+            <section class="section pr3_description">
+                <div class="description_title">Description <span>(Project3)</span></div>
+                <div class="description_section">
+                    <div class="description1">
+                        <div class="sub">
+                            <div class="sub_title">1. 숫자 증가 애니메이션</div>
+                            <div class="sub_text">
+                                <span class="bold">window.onscroll</span>을 이용해 스크롤시 동작이 구현되도록 작성하였습니다.&nbsp;
+                                height 변수에는 <span class="bold">window.pageYOffset</span>를 활용해 스크롤 높이를 받았습니다. <br>
+                                또한 <span class="bold">play 변수</span>에는 false 값을 넣어 if문의 실행이 완료되면 동작을 멈추게 합니다.&nbsp;
+                                if문 안에는 <span class="bold">setInterVal 함수</span>를 이용하여 <span class="bold">+=</span> 연산자를 통해 숫자를 1씩 증가시키고, <br>
+                                정해진 숫자까지 도달하면 <span class="bold">clearInterVal 함수</span>로 해당 동작을 중지시킵니다.
+                            </div>
+                        </div>
+                        <div class="code_capture">
+                            <div class="capture1">
+                                <p>Java Script 코드<span>(마우스를 올려주세요)</span></p>
+                                <img src="./img/project/project3/desc/increase_js.png" alt="">
+                            </div>
+                        </div>
+                    </div> <!-- desc1 -->
+                    <div class="description2">
+                        <div class="sub">
+                            <div class="sub_title">2. JQuery를 활용한 FadeIN-Out 배너 구현</div>
+                            <div class="sub_text">
+                                slide 내부의 slide1, 2, 3 태그에 <span class="bold">opacity : 0</span>을 지정하고, on 클래스를 가진 태그만 <span class="bold">opacity : 1</span>을 가지게 하였다. 
+                                <span class="bold">slideFn함수</span>내에서 <span class="bold">removeClass</span>를 이용하여 on 클래스를 제거하고, <br>
+                                <span class="bold">addClass</span>를 이용하여 on 클래스를 넣어줍니다.&nbsp;
+                                addClass의 대상이 되는 변수는 해당 함수가 실행됨에 따라 <span class="bold">idx 변수의 값이 1씩 증가</span>해 해당 index 값을 가진 변수가 할당됩니다. <br>
+                                또한, idx 변수가 <span class="bold">slide의 length</span>와 같아지면 다시 idx의 값을 0으로 만들어 재실행 하게 하였습니다.
+                                slideFn 함수는 <span class="bold">setInterVal 함수</span>를 이용해 3초에 한번씩 실행하게 합니다. <br>
+                                이러한 동작으로 3초에 한번씩 배너 이미지가 변경되는 동작이 실행됩니다.
+                            </div>
+                        </div>
+                        <div class="code_capture">
+                            <div class="capture3">
+                                <p>html, css 코드<span>(마우스를 올려주세요)</span></p>
+                                <img class="fadeInOut_hc" src="./img/project/project3/desc/banner_html_css.png" alt="">
+                            </div>
+                            <div class="capture4">
+                                <p>Java Script 코드<span>(마우스를 올려주세요)</span></p>
+                                <img class="fadeInOut_js" src="./img/project/project3/desc/banner_js.png" alt="">
+                            </div>
+                        </div>
+                    </div> <!-- desc2 -->
+                </div> <!-- description_section -->
+            </section> <!-- project3 DESC -->
         </div> <!-- horizontal -->
         <div class="skill" id="SKILL">
             <div class="title">SKILL</div>
