@@ -125,18 +125,19 @@ document.querySelectorAll('.dep1 a').forEach(aTag => {
 
 //gsap 가로스크롤
 let sections = gsap.utils.toArray('.section');
-
-gsap.to(sections, {
-	xPercent: -100 * (sections.length - 1),
-	ease: 'none',
-	scrollTrigger: {
-		trigger: '.horizontal',
-		pin: true,
-		scrub: 1,
-		snap: 1 / (sections.length - 1),
-		end: () => '+=' + document.querySelector('.horizontal').offsetWidth,
-	},
-});
+// if(window.pageYOffset > 1100){
+    gsap.to(sections, {
+        xPercent: -100 * (sections.length - 1),
+        ease: 'none',
+        scrollTrigger: {
+            trigger: '.horizontal',
+            pin: true,
+            scrub: 1,
+            snap: 1 / (sections.length - 1),
+            end: () => '+=' + document.querySelector('.horizontal').offsetWidth,
+        },
+    });
+// }
 
 //프로젝트1 사이트 사진 호버
 const pc1FullPage = document.querySelector('.pc1_full_page');
@@ -216,6 +217,7 @@ circles.forEach((el) => {
 //스크롤 애니메이션
 window.addEventListener('scroll', function() {
     let height = window.scrollY;
+    console.log('height: ', height);
 
     const about = this.document.getElementById('ABOUT');
     const dep1 = document.querySelector('.dep1');
@@ -238,11 +240,11 @@ window.addEventListener('scroll', function() {
         dep1.style.right = 0;
     }else{
         dep1.style.backgroundColor = 'transparent';
-        dep1.style.top = '2rem';
-        dep1.style.right = '5rem';
+        dep1.style.top = '1%';
+        dep1.style.right = '3%';
     }
 
-    if(height  > 13750){
+    if(height  > 7800){
         skill.style.opacity = 1;
         skill.style.transform = 'translateY(0rem)'
     }else{
@@ -250,7 +252,7 @@ window.addEventListener('scroll', function() {
         skill.style.transform = 'translateY(5rem)'
     }
 
-    if(height  > 14500){
+    if(height  > 8800){
         contact.style.opacity = 1;
         contact.style.transform = 'translateY(0rem)'
     }else{
