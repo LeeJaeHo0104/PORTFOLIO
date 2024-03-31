@@ -4,13 +4,49 @@
     ul.dep1{right: 5%;}
     /* ========== first ========== */
 
+
     /* ========== second ========== */
     .introduce{gap: 10rem;}
     /* ========== second ========== */
 
+
+    /* ========== pr1 ========== */
+    @keyframes policeCar {
+        0%{transform: translate(0);}
+        50%{transform: translateX(79rem);}
+        100%{transform: translateX(0rem);}
+    }
+    /* ========== pr1 ========== */
+
+
     /* ========== pr1 desc ========== */
     .pr1_description img.weather_capJS:hover{transform: translateX(-40rem) scale(2.7);}
+    .description2 .code_capture img[alt="banner"]:hover{transform: translate(-22rem, -13rem) scale(1.6);}
     /* ========== pr1 desc ========== */
+
+    /* ========== pr2 ========== */
+    @keyframes pizzaAutoby {
+        0%{transform: translate(0);}
+        50%{transform: translateX(79rem);}
+        100%{transform: translateX(0rem);}
+    }
+    /* ========== pr2 ========== */
+
+
+    /* ========== pr2 desc ========== */
+    .sticky_js:hover {transform: translate(-18rem, 7rem) scale(2);}
+    /* ========== pr2 desc ========== */
+
+
+    /* ========== pr3 ========== */
+    @keyframes money {
+        0%{transform: translate(0);}
+        50%{transform: translateX(79rem);}
+        100%{transform: translateX(0rem);}
+    }
+    .project_skill > .skill_name{font-size: 1.8rem;}
+    .green_ani{left: 89rem;}
+    /* ========== pr3 ========== */
 }
 /* 1700 */
 
@@ -21,6 +57,7 @@
     .cnt_mid > .cnt_main{font-size: 11.5rem;}
     /* ========== first ========== */
     
+
     /* ========== second ========== */
     .introduce{gap: 7rem;}
     .second_content > .content_left{width: 55%;}
@@ -36,6 +73,42 @@
         left: 3%;
     }
     /* ========== second ========== */
+
+
+    /* ========== pr1 ========== */
+    @keyframes policeCar {
+        0%{transform: translate(0);}
+        50%{transform: translateX(73rem);}
+        100%{transform: translateX(0rem);}
+    }
+    .sitelink{font-size: 2rem;}
+    .mouse_on{right: 1%;}
+    /* ========== pr1 ========== */
+
+
+    /* ========== pr2 ========== */
+    @keyframes pizzaAutoby {
+        0%{transform: translate(0);}
+        50%{transform: translateX(73rem);}
+        100%{transform: translateX(0rem);}
+    }
+    .sec3 .mouse_on2{right: 2.5%;}
+    /* ========== pr2 ========== */
+
+    /* ========== pr2 desc ========== */
+    .sticky_js:hover{transform: translate(-21rem, 7rem) scale(1.7);}
+    /* ========== pr2 desc ========== */
+
+
+    /* ========== pr3 ========== */
+    @keyframes money {
+        0%{transform: translate(0);}
+        50%{transform: translateX(73rem);}
+        100%{transform: translateX(0rem);}
+    }
+    .mouse_on3{right: 2.3%;}
+    .green_ani{left: 82rem;}
+    /* ========== pr3 ========== */
 }
 /* 1600 */
 
@@ -47,9 +120,41 @@
     .left_abc, .right_abc{width: 12%;}
     /* ========== first ========== */
 
+
     /* ========== second ========== */
     .introduce > .int_title{margin-left: 10rem;}
     /* ========== second ========== */
+
+
+    /* ========== pr1 ========== */
+    @keyframes policeCar {
+        0%{transform: translate(0);}
+        50%{transform: translateX(66rem);}
+        100%{transform: translateX(0rem);}
+    }
+    .main_left > .pc1_full_page{height: 60rem;}
+    .main_left > .m1_full_page{height: 35rem;}
+    .project_skill > .skill_name {font-size: 1.6rem;}
+    .sitelink {font-size: 1.8rem;}
+    /* ========== pr1 ========== */
+
+
+    /* ========== pr2 ========== */
+    @keyframes pizzaAutoby {
+        0%{transform: translate(0);}
+        50%{transform: translateX(66rem);}
+        100%{transform: translateX(0rem);}
+    }
+    /* ========== pr2 ========== */
+
+
+    /* ========== pr3 ========== */
+    @keyframes money {
+        0%{transform: translate(0);}
+        50%{transform: translateX(66rem);}
+        100%{transform: translateX(0rem);}
+    }
+    /* ========== pr3 ========== */
 }
 /* 1450 */
 

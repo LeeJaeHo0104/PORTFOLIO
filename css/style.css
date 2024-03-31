@@ -190,6 +190,9 @@ ul.dep1 > li > a:hover{
     -webkit-text-stroke: 1.5px #29A587;
     color: transparent;
 }
+.space{
+    letter-spacing: 10px;
+}
 .jump{
     display: inline-block;
 }
@@ -416,14 +419,13 @@ ul.dep1 > li > a:hover{
 /* ========== horizontal ========== */
 .horizontal {
     width: 600%;
-    height: 100vh;
+    height: 100%;
     display: flex;
     flex-wrap: nowrap;
 }
 .section {
-    width: 100%;
+    width: 100vw;
     height: 100%;
-    padding: 10px;
 }
 /* ========== horizontal ========== */
 
@@ -1333,6 +1335,10 @@ img.scroll_capture:hover{
 .mail span{
     margin-left: 5rem;
 }
+.num span a,
+.mail span a{
+    color: #fff;
+}
 .github_info span a{
     color: #fff;
     margin-left: 16.5rem;
@@ -1340,7 +1346,7 @@ img.scroll_capture:hover{
 .num_bar:hover{
     background-color: #fff;
 }
-.num_bar:hover span{
+.num_bar:hover span a{
     color: #29A587;
 }
 .num_bar:hover .num_icon{
@@ -1353,7 +1359,7 @@ img.scroll_capture:hover{
 .mail_bar:hover{
     background-color: #fff;
 }
-.mail_bar:hover span{
+.mail_bar:hover span a{
     color: #29A587;
 }
 .mail_bar:hover .mail_icon{
